@@ -1,7 +1,7 @@
 <h1 align="center">BeautyTry</h1></br>
 
 <p align="center">
-BeautyTry: A lightweight( 200kb) library make try-catch niceer and polite .
+BeautyTry: A lightweight( 200kb) library makes try-catch nicer and polite.
 </p>
 </br>
 <p align="center">
