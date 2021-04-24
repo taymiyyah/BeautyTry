@@ -27,5 +27,45 @@ class MainActivity : AppCompatActivity() {
             throw RuntimeException()
             println("all blocks are safe and never crash")
         }
+
+
+        tries {
+            getWeatherF()
+        }.and {
+            getWeatherC()
+        }.onFailed {
+            logException()
+        }.onAlways {
+            updateTheView()
+        }
+
+
+        tries {
+            getWeatherF()
+        }
+
+
+        try {
+            getWeatherF()
+        } catch (e: Exception) {
+
+        }
+
+    }
+
+    private fun getWeatherC() {
+        TODO("Not yet implemented")
+    }
+
+    private fun updateTheView() {
+        TODO("Not yet implemented")
+    }
+
+    private fun logException() {
+        TODO("Not yet implemented")
+    }
+
+    private fun getWeatherF() {
+        TODO("Not yet implemented")
     }
 }
