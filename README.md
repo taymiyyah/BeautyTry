@@ -46,8 +46,17 @@ dependencies {
             throw RuntimeException()
             println("all blocks are safe and never crash")
 ```
-
-
+## Define Shared Logic Executes On Throws 
+```Step
+class MyApplication : Application(){
+    init {
+        BeautyTry.sharedOnFailedLogic ={
+            Log.d("BeautyTry", "log to firebase")
+            Log.d("BeautyTry", "log to sever")
+        }
+    }
+}
+```
 # License
 ```xml
 Copyright 2021 taymiyyah (Huthefa ALfararjeh)
